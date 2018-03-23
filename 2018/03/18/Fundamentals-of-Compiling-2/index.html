@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="http://tyc896.github.io">
   <title>Fundamentals of Compiling_2 | TYC&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="编译原理     第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2={ab | a\in\sum_1,b\in\sum_2}$ 幂运算：$\sum^0 = {\varepsilon }$,$\sum^n">
+  <meta name="description" content="编译原理      部分公式无法正常显示，点击以下链接下载pdf版：下载地址（密码: v5sc）    第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2=\{ab | a\in\sum_1,b\in\su">
 <meta name="keywords" content="编译原理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fundamentals of Compiling_2">
 <meta property="og:url" content="http://tyc896.github.io/2018/03/18/Fundamentals-of-Compiling-2/index.html">
 <meta property="og:site_name" content="TYC&#39;s Blog">
-<meta property="og:description" content="编译原理     第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2={ab | a\in\sum_1,b\in\sum_2}$ 幂运算：$\sum^0 = {\varepsilon }$,$\sum^n">
+<meta property="og:description" content="编译原理      部分公式无法正常显示，点击以下链接下载pdf版：下载地址（密码: v5sc）    第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2=\{ab | a\in\sum_1,b\in\su">
 <meta property="og:image" content="https://img.shields.io/badge/author-Yuchen%20Tian-brightgreen.svg">
 <meta property="og:image" content="https://img.shields.io/badge/date-2018--03--18-orange.svg">
 <meta property="og:image" content="https://s1.ax1x.com/2018/03/18/9oY0Rx.png">
-<meta property="og:updated_time" content="2018-03-18T21:39:22.384Z">
+<meta property="og:updated_time" content="2018-03-23T23:10:27.372Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fundamentals of Compiling_2">
-<meta name="twitter:description" content="编译原理     第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2={ab | a\in\sum_1,b\in\sum_2}$ 幂运算：$\sum^0 = {\varepsilon }$,$\sum^n">
+<meta name="twitter:description" content="编译原理      部分公式无法正常显示，点击以下链接下载pdf版：下载地址（密码: v5sc）    第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2=\{ab | a\in\sum_1,b\in\su">
 <meta name="twitter:image" content="https://img.shields.io/badge/author-Yuchen%20Tian-brightgreen.svg">
   
     <link rel="alternative" href="/atom.xml" title="TYC&#39;s Blog" type="application/atom+xml">
@@ -167,6 +167,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="编译原理"><a href="#编译原理" class="headerlink" title="编译原理"></a>编译原理</h1><p><img src="https://img.shields.io/badge/author-Yuchen%20Tian-brightgreen.svg" alt="">  <img src="https://img.shields.io/badge/date-2018--03--18-orange.svg" alt="">  </p>
+<blockquote>
+<p>部分公式无法正常显示，点击以下链接下载pdf版：<a href="https://pan.baidu.com/s/1tvHU5GVSf9E12uOvHUTp4Q" target="_blank" rel="noopener">下载地址</a>（密码: v5sc）  </p>
+</blockquote>
 <h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="字母表"><a href="#字母表" class="headerlink" title="字母表"></a>字母表</h4><ul>
 <li><p>字母表$\sum$是一个<strong>有穷符号</strong>的集合。</p>
 <ul>
@@ -176,8 +179,8 @@
 </li>
 <li><p>字母表上的运算</p>
 <ul>
-<li>字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2={ab | a\in\sum_1,b\in\sum_2}$</li>
-<li>幂运算：$\sum^0 = {\varepsilon }$,$\sum^n = \sum^{n-1} \sum^1(n\geq1)$</li>
+<li>字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2=\{ab | a\in\sum_1,b\in\sum_2\}$</li>
+<li>幂运算：$\sum^0 = \{\varepsilon \}$,$\sum^n = \sum^{n-1} \sum^1(n\geq1)$</li>
 <li>闭包：<ul>
 <li>正闭包：$\sum^+=\sum^1\cup\sum^2\cup\sum^3 \cdots$</li>
 <li>克林闭包：$\sum^*=\sum^0 \cup \sum^+$</li>
@@ -188,7 +191,7 @@
 </ul>
 <a id="more"></a>
 <h4 id="文法"><a href="#文法" class="headerlink" title="文法"></a>文法</h4><ul>
-<li>形式化定义：$G={V_T,V_N,P,S}$<ul>
+<li>形式化定义：$G=\{V_T,V_N,P,S\}$<ul>
 <li>$V_T$：终结符的集合，是文法所定义语言的基本符号。</li>
 <li>$V_N$：非终结符号的集合，是用来表示语法成分的符号。</li>
 <li>$P$：产生式的集合,描述了将终结符和非终结符组成串的方法。一般形式：$\alpha\to\beta$<ul>
@@ -220,7 +223,7 @@
 </li>
 <li><p>句子是全由<strong>终结符</strong>构成的句型。</p>
 </li>
-<li><p>由文法G的开始符号S推导出的所有句子构成的集合称为<strong>文法G生成的语言</strong>，$L(G) = {\omega | S\Rightarrow^<em> \omega, \omega \in V_T^</em>}$</p>
+<li><p>由文法G的开始符号S推导出的所有句子构成的集合称为<strong>文法G生成的语言</strong>，$L(G) = \{\omega | S\Rightarrow^<em> \omega, \omega \in V_T^</em>\}$</p>
 </li>
 </ul>
 <h4 id="文法的分类"><a href="#文法的分类" class="headerlink" title="文法的分类"></a>文法的分类</h4><ul>
