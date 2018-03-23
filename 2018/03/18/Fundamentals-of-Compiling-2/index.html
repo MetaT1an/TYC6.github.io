@@ -6,14 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://tyc896.github.io">
-  <title>Archives: 2018 | TYC&#39;s Blog</title>
+  <title>Fundamentals of Compiling_2 | TYC&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="TYC&#39;s Blog">
-<meta property="og:url" content="http://tyc896.github.io/archives/2018/index.html">
+  <meta name="description" content="编译原理     第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2={ab | a\in\sum_1,b\in\sum_2}$ 幂运算：$\sum^0 = {\varepsilon }$,$\sum^n">
+<meta name="keywords" content="编译原理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fundamentals of Compiling_2">
+<meta property="og:url" content="http://tyc896.github.io/2018/03/18/Fundamentals-of-Compiling-2/index.html">
 <meta property="og:site_name" content="TYC&#39;s Blog">
+<meta property="og:description" content="编译原理     第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2={ab | a\in\sum_1,b\in\sum_2}$ 幂运算：$\sum^0 = {\varepsilon }$,$\sum^n">
+<meta property="og:image" content="https://img.shields.io/badge/author-Yuchen%20Tian-brightgreen.svg">
+<meta property="og:image" content="https://img.shields.io/badge/date-2018--03--18-orange.svg">
+<meta property="og:image" content="https://s1.ax1x.com/2018/03/18/9oY0Rx.png">
+<meta property="og:updated_time" content="2018-03-18T21:39:22.384Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TYC&#39;s Blog">
+<meta name="twitter:title" content="Fundamentals of Compiling_2">
+<meta name="twitter:description" content="编译原理     第二章基本概念字母表 字母表$\sum$是一个有穷符号的集合。  符号：字母、数字、标点符号… 举例：ASCII字符集，unicode字符集   字母表上的运算  字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2={ab | a\in\sum_1,b\in\sum_2}$ 幂运算：$\sum^0 = {\varepsilon }$,$\sum^n">
+<meta name="twitter:image" content="https://img.shields.io/badge/author-Yuchen%20Tian-brightgreen.svg">
   
     <link rel="alternative" href="/atom.xml" title="TYC&#39;s Blog" type="application/atom+xml">
   
@@ -137,36 +146,148 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Fundamentals-of-Compiling-2" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Fundamentals of Compiling_2
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/18/Fundamentals-of-Compiling-2/" class="archive-article-date">
+
+        
+        <a href="/2018/03/18/Fundamentals-of-Compiling-2/" class="archive-article-date">
   	<time datetime="2018-03-18T20:46:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-18</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/18/Fundamentals-of-Compiling-2/">Fundamentals of Compiling_2</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="编译原理"><a href="#编译原理" class="headerlink" title="编译原理"></a>编译原理</h1><p><img src="https://img.shields.io/badge/author-Yuchen%20Tian-brightgreen.svg" alt="">  <img src="https://img.shields.io/badge/date-2018--03--18-orange.svg" alt="">  </p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="字母表"><a href="#字母表" class="headerlink" title="字母表"></a>字母表</h4><ul>
+<li><p>字母表$\sum$是一个<strong>有穷符号</strong>的集合。</p>
+<ul>
+<li>符号：字母、数字、标点符号…</li>
+<li>举例：ASCII字符集，unicode字符集</li>
+</ul>
+</li>
+<li><p>字母表上的运算</p>
+<ul>
+<li>字母表$\sum_1$和字母表$\sum_2$的乘积：$\sum_1\sum_2={ab | a\in\sum_1,b\in\sum_2}$</li>
+<li>幂运算：$\sum^0 = {\varepsilon }$,$\sum^n = \sum^{n-1} \sum^1(n\geq1)$</li>
+<li>闭包：<ul>
+<li>正闭包：$\sum^+=\sum^1\cup\sum^2\cup\sum^3 \cdots$</li>
+<li>克林闭包：$\sum^*=\sum^0 \cup \sum^+$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+<h4 id="文法"><a href="#文法" class="headerlink" title="文法"></a>文法</h4><ul>
+<li>形式化定义：$G={V_T,V_N,P,S}$<ul>
+<li>$V_T$：终结符的集合，是文法所定义语言的基本符号。</li>
+<li>$V_N$：非终结符号的集合，是用来表示语法成分的符号。</li>
+<li>$P$：产生式的集合,描述了将终结符和非终结符组成串的方法。一般形式：$\alpha\to\beta$<ul>
+<li>$\alpha\in(V_T \cup V_N)^+$,$\alpha$中至少包含$V_n$中的一个元素，称为产生式的<strong>左部</strong>。</li>
+<li>$\beta \in(V_T \cup V_n)^<em>$：称为产生式的<em>*右部</em></em>。</li>
+</ul>
+</li>
+<li>$S$：开始符号$S\in V_N$,是该文法中最大的语法成分。</li>
+</ul>
+</li>
+</ul>
+<h4 id="产生式的简写"><a href="#产生式的简写" class="headerlink" title="产生式的简写"></a>产生式的简写</h4><ul>
+<li><p>对一组具有<strong>相同左部</strong>的$\alpha$产生式：$\alpha \to \beta_1,\alpha \to \beta_2, \cdots, \alpha \to \beta_n$,可以简写为：$\alpha \to \beta_1 | \beta_2 | \cdots|\beta_n$</p>
+</li>
+<li><p>$\beta_1,\beta_2 ,\cdots,\beta_n$称为$\alpha$的<strong>候选式</strong></p>
+</li>
+</ul>
+<h4 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h4><ul>
+<li>$\Rightarrow^+$：表示经过<strong>正数</strong>步推导。</li>
+<li>$\Rightarrow^<em>$：表示经过<em>*若干</em></em>步推导（可以是0）。</li>
+<li>$\Rightarrow$只表示推导一步。 </li>
+</ul>
+<h4 id="句子和句型"><a href="#句子和句型" class="headerlink" title="句子和句型"></a>句子和句型</h4><ul>
+<li><p>若$S\Rightarrow^<em> \alpha, \alpha \in (V_T \cup V_N)^</em>$,则称$\alpha$是G的一个<strong>句型</strong>。</p>
+</li>
+<li><p>一个句型中既可以包含<strong>终结符</strong>，又可以包含<strong>非终结符</strong>，也可以是<strong>空串</strong>。</p>
+</li>
+<li><p>如果$S \Rightarrow^<em>\omega, \omega \in V_T^</em>$，则称$\omega$是G的一个<strong>句子</strong>。</p>
+</li>
+<li><p>句子是全由<strong>终结符</strong>构成的句型。</p>
+</li>
+<li><p>由文法G的开始符号S推导出的所有句子构成的集合称为<strong>文法G生成的语言</strong>，$L(G) = {\omega | S\Rightarrow^<em> \omega, \omega \in V_T^</em>}$</p>
+</li>
+</ul>
+<h4 id="文法的分类"><a href="#文法的分类" class="headerlink" title="文法的分类"></a>文法的分类</h4><ul>
+<li><p>0型文法（<strong>无限制文法</strong>）</p>
+<ul>
+<li>$\forall \alpha\to\beta, \alpha$至少包含一个非终结符。</li>
+</ul>
+</li>
+<li><p>1型文法（<strong>上下文有关文法</strong>）</p>
+<ul>
+<li>$\forall \alpha \to \beta, |\alpha| \leq |\beta|$</li>
+<li>一般形式：$\alpha_1A\alpha_2 \Rightarrow \alpha_1\beta\alpha_2, \beta \ne \varepsilon$</li>
+</ul>
+</li>
+<li><p>2型文法（<strong>上下文无关文法</strong>）</p>
+<ul>
+<li>$\forall \alpha \to \beta,\alpha \in V_N$</li>
+</ul>
+</li>
+<li><p>3型文法（<strong>正则文法</strong>）</p>
+<ul>
+<li><strong>右线性</strong>文法：$A \to \omega B / A \to \omega$</li>
+<li><strong>左线性</strong>文法：$A \to B\omega / A \to \omega$</li>
+</ul>
+</li>
+</ul>
+<h3 id="语法分析树"><a href="#语法分析树" class="headerlink" title="语法分析树"></a>语法分析树</h3><p><img src="https://s1.ax1x.com/2018/03/18/9oY0Rx.png" alt=""> </p>
+<ul>
+<li><strong>根节点</strong>的标号为<strong>文法开始符号</strong></li>
+<li><strong>内部节点</strong>表示对一个产生式$A \to \beta$的应用，该节点的标号是此产生式左部A。该节点的子结点的标号从左到右构成了产生式的右部$\beta$。</li>
+<li><strong>叶结点</strong>的标号既可以是<strong>非终结符</strong>，也可以是<strong>终结符</strong>。从左到右排列叶子结点得到的符号串称为是这棵树的<strong>边缘</strong>。也就是产生式对应的句子。</li>
+<li>如果一个文法可以为某个句子生成<strong>多颗分析树</strong>，则称这个文法是<strong>二义性</strong>的，本质：用不同的推导方法及顺序产生了同样的句子。</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢老板<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/Alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -178,122 +299,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://tyc896.github.io/2018/03/18/Fundamentals-of-Compiling-2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/18/Fundamentals-of-Compiling-1/" class="archive-article-date">
-  	<time datetime="2018-03-18T12:40:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/03/18/Fundamentals-of-Compiling-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Fundamentals of Compiling_1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/18/Fundamentals-of-Compiling-1/">Fundamentals of Compiling_1</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">编译原理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/17/test/" class="archive-article-date">
-  	<time datetime="2018-03-17T10:20:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/17/test/">test</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/17/hello-world/" class="archive-article-date">
-  	<time datetime="2018-03-17T10:14:31.460Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/17/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -316,8 +421,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
